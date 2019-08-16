@@ -35,6 +35,10 @@
         background-color: #ffc107;
         width: 70%;
       }
+      .bar-5 {
+        background-color: #007bff;
+        width: 80%;
+      }
       .striped-1 {
         background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,
         transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,
@@ -52,6 +56,19 @@
       .striped-4 {
         background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
         background-size: 1rem 1rem;
+      }
+      .striped-5 {
+        background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+        background-size: 1rem 1rem;
+        animation: progress-bar-stripes 1s linear infinite;
+      }
+      @keyframes progress-bar-stripes {
+        0% {
+          background-position: 1rem 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
       }
     </style>
   </head>
@@ -71,6 +88,11 @@
     </div>
     <div class="progress-container">
       <div class="progress-bar bar-4 striped-4">
+      </div>
+    </div>
+    <h2>Animated Striped Progress Bar</h2>
+    <div class="progress-container">
+      <div class="progress-bar bar-5 striped-5">
       </div>
     </div>
   </body>

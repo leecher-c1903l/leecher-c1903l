@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Progress Bar Dung</title>
+  <style>
+    *, ::after, ::before{
+      box-sizing: border-box;
+    }
+    /* ------progress-bar-java------ */
+    .progress-bar-java{
+      background-color:#5bc0de;
+      border-radius: .5rem;
+      height: 2rem;
+    }
+    /* ------progress-bar-html------ */
+    .progress-bar-html{
+      background-color:#3c0af3;
+      border-radius: .5rem;
+      height: 2rem;
+    }
+    /* ------progress-bar-css------ */
+    .progress-bar-css{
+      background-color:#f511cf;
+      border-radius: .5rem;
+      height: 2rem;
+    }
+    .pb-label{
+      text-align: left;
+      padding-left: 10px;
+      top: 20px;
+    }
+    .progress{
+      height: 2rem;
+      background-color: #e9ecef;
+      border-radius: .5rem;
+    }
+    .progress-bar{
+      text-align: center;
+      line-height: 2rem;  
+    }
+    .text-center{
+      text-align: center !important;
+      color: #000;
+      font-size: 3rem;
+      font-weight: 500;
+    }
+    .row{
+      width: 100%;
+    }
+    .container-center{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%, -50%); 
+    }
+  </style>
+</head>
+<body>
+    <div class="container container-center">					
+        <div class="row">    
+          <h3 class="text-center">Basic Progress Bar</h3>
+          <p class="pb-label">JAVA</p>
+            <div class="progress pd-progress-style1">   
+              <div class="progress-bar progress-bar-java" style="width:93%">    
+                93%
+              </div><br>
+            </div>
+
+          <p class="pb-label">CSS</p>
+            <div class="progress pd-progress-style1">  
+              <div class="progress-bar progress-bar-css" style="width:82%">    
+                82%
+              </div><br>
+            </div>
+
+          <p class="pb-label">HTML</p>
+            <div class="progress pd-progress-style1">
+              <div class="progress-bar progress-bar-html" style="width:65%"> 
+                65%
+              </div>  
+            </div>
+        </div>
+      </div>            
+</body>
+</html>
